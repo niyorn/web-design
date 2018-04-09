@@ -1,0 +1,181 @@
+:root{
+    --backround-color:#fbfbfb;
+
+    --material-shaduw-1: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    --material-shaduw-2: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    --material-shaduw-3: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    --material-shaduw-4: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+    --transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    display: grid;
+    grid-template-areas: "navigation filter"
+                         "navigation overview";
+    grid-template-columns: 4em 1fr;
+    grid-template-rows: 9em 1fr;
+    background-color: var(--backround-color);
+}
+
+li{
+    list-style-type: none;
+}
+
+/*********************
+    Navigation
+*********************/
+.navigation{
+    grid-area: navigation;
+    padding: 2rem 0.4rem;
+    height: 100vh;
+}
+
+.navigation ul {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: center;
+    align-content: space-between;
+}
+
+.navigation li {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    transform: rotate(-90deg);
+}
+
+/*********************
+    Filter
+*********************/
+
+.filter{
+    grid-area: filter;
+    height: 100%;
+    display: flex;
+    padding: 1rem 2rem;
+}
+
+.filter ul{
+    display: flex;
+    width: 100%;
+}
+
+.filter li{
+    display: flex;
+    align-items: center;
+    margin-right: 0.4rem;
+    padding: 0.4rem 2rem;
+    border: solid rgba(0, 0, 0, 0.048) 0.04rem;
+    border-radius: 0.2rem;
+}
+
+.filter div{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    position: relative;
+}
+
+.filter h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: normal;
+}
+
+/*********************
+    Overview
+*********************/
+.overview{
+    grid-area: overview;
+    display: flex;
+    padding: 1rem 2rem;
+    flex-wrap: wrap;
+}
+
+.overview a{
+    text-decoration: none;
+}
+
+.project{
+    display: grid;
+    grid-template-areas: 'image description';
+    grid-template-columns: 22em 17em;
+    height: 27em;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+}
+
+.project .description div{
+    box-shadow: var(--material-shaduw-2);
+    transition: var(--transition);
+}
+
+.project .description div:hover, .project .description:focus div{
+    box-shadow: var(--material-shaduw-4);
+}
+
+.project img{
+    grid-area: image;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project .description {
+    grid-area: description;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+.project .description div{
+    height: 80%;
+    background-color: #fff;
+    padding: 2rem;
+    margin-left: -4rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.project .description div::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    animation: slide-out 0.7s forwards;
+}
+
+@keyframes slide-out{
+    from{
+        transform: translateX(0)
+    }
+
+    to{
+        transform: translateX(100%);
+
+    }
+}
+
+.description h2{
+    margin-bottom: 1rem;
+    font-size: 2.4em;
+    font-weight: bold;
+}

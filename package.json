@@ -1,0 +1,32 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Concept of my portfolio site",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niyorn/web-design.git"
+  },
+  "keywords": [
+    "portfio",
+    "concept"
+  ],
+  "author": "Chanakarn Niyornram",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/niyorn/web-design/issues"
+  },
+  "homepage": "https://github.com/niyorn/web-design#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.8",
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.2"
+  }
+}
