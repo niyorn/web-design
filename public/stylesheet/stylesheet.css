@@ -1,5 +1,6 @@
 :root{
-    --backround-color:#fbfbfb;
+    --backround-color:#e4e4e4;
+    --primary-color: #84FFFF;
 
     --material-shaduw-1: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     --material-shaduw-2: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
@@ -116,8 +117,8 @@ li{
     grid-template-areas: 'image description';
     grid-template-columns: 22em 17em;
     height: 27em;
-    margin-right: 2rem;
-    margin-bottom: 1rem;
+    margin: 7rem;
+    margin-bottom: 4em;
 }
 
 .project .description div{
@@ -159,7 +160,7 @@ li{
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: red;
+    background-color: var(--primary-color);
     animation: slide-out 0.7s forwards;
 }
 
@@ -178,4 +179,48 @@ li{
     margin-bottom: 1rem;
     font-size: 2.4em;
     font-weight: bold;
+}
+
+
+/***********************
+    Project page
+***********************/
+
+.project-page-container{
+    display: grid;
+    grid-template-areas: 'description image';   
+    grid-template-columns: 2fr 1fr;
+    padding: 2rem;
+}
+
+.project-page-container .description {
+    grid-area: description;
+    background-color: white;
+    padding: 4rem;
+}
+
+.project-page-container .description h1{
+    font-size: 10vw;
+    margin-bottom: 3rem;
+}
+
+.project-page-container .description p{
+    font-size: 1.7vw;
+    margin-bottom: 2rem;
+    line-height: 1.5em;
+}
+
+.project-page-container .project-image-container{
+    grid-area: image;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-image-container img{
+    display: block;
+    width: 100%;
+    margin-bottom: 10rem;
+    object-fit: contain;
+    position: sticky;
+    top: 1rem;
 }
