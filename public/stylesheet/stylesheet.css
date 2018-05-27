@@ -110,7 +110,6 @@ li{
     grid-area: overview;
     display: flex;
     padding: 1rem 2rem;
-    /* background-color: white; */
     overflow-y: hidden;
     perspective: 47em;
     perspective-origin: right;
