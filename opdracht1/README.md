@@ -60,3 +60,30 @@ And on the detail page, we want to attract the user to the titel of the project 
 <p>State one</p>
 <img src='readme-assets/primary-action-state-3.PNG' alt='Homepage of portfolio application'>
 </details>
+
+## Getting started
+Clone repo
+```
+git clone `https://github.com/niyorn/web-design.git`
+```
+
+Change directory to opdracht1
+```
+cd opdracht1
+```
+
+Install all dependencies
+```
+npm install
+```
+
+Start application
+```
+npm start
+```
+
+Standard port is 4000
+```
+localhost:4000
+```
+
