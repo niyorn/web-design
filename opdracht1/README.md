@@ -40,4 +40,23 @@ To let the user know that an element is clickable, a shaduw is addedd to every e
 </details>
 
 ### Feedback
-The description don't look clickable. Add a button that says: 'Read more' and make this look like a real button instead. 
+The description don't look clickable. Add a button that says: 'Read more' and make this look like a real button instead.
+
+
+## Strong visual hierachies works best
+
+When creating this portfolio, we want to attract the user attention to whats the most important. On the landings page it's the titel of the site. The titel takes the most spaces and attract the user attention really well.
+
+<details>
+<summary>Click to see: demo of the landings page</summary>
+<p>State one</p>
+<img src='readme-assets/primary-action-state-1.PNG' alt='Homepage of portfolio application'>
+</details>
+
+And on the detail page, we want to attract the user to the titel of the project and then to the text. To make the titel the first thing that the user looking at, we're going the make the titel really big like the previous example also.
+
+<details>
+<summary>Click to see: demo of the detail page</summary>
+<p>State one</p>
+<img src='readme-assets/primary-action-state-3.PNG' alt='Homepage of portfolio application'>
+</details>
