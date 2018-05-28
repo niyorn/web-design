@@ -1,6 +1,13 @@
 # Portfolio
 ![Demo of the portfolio application](readme-assets/portfolio.gif)
 
+## Table of contents
+
+- [Description](#description)
+- [One primary action per screen](#one_primary_action_per_screen)
+- [Appearance follow behavior](#appearance_follow_behavior)
+- [Strong visual hierarchies work best](#strong_visual_hierarchies_work_best)
+- [Getting started](#getting_started)
 
 ## Description
 This porfolio is a prototype project where we will create a simple portfolio site that will follow some of the [design principle](http://bokardo.com/principles-of-user-interface-design/) of Joshua porter
@@ -43,7 +50,7 @@ To let the user know that an element is clickable, a shaduw is addedd to every e
 The description don't look clickable. Add a button that says: 'Read more' and make this look like a real button instead.
 
 
-## Strong visual hierachies works best
+## Strong visual hierarchies work best
 
 When creating this portfolio, we want to attract the user attention to whats the most important. On the landings page it's the titel of the site. The titel takes the most spaces and attract the user attention really well.
 
