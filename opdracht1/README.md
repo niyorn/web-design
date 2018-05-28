@@ -28,3 +28,16 @@ The last state is the detail page of the project.
 <p>State three</p>
 <img src='readme-assets/primary-action-state-3.PNG' alt='state 3 of the application'
 </details>
+
+## Appearance follow behavior
+
+To let the user know that an element is clickable, a shaduw is addedd to every element that are clickable. When the user hover over the element the shaduw will get bigger.
+
+<details>
+<summary>Click to see: demo</summary>
+<p>Hovering over a project</p>
+<img src='readme-assets/project-hover.gif' alt='A demo of a user that hover over the description of a project'>
+</details>
+
+### Feedback
+The description don't look clickable. Add a button that says: 'Read more' and make this look like a real button instead. 
