@@ -26,7 +26,7 @@ The last state is the detail page of the project.
 <img src='readme-assets/primary-action-state-2.PNG' alt='state 2 of the application'>
 
 <p>State three</p>
-<img src='readme-assets/primary-action-state-3.PNG' alt='state 3 of the application'
+<img src='readme-assets/primary-action-state-3.PNG' alt='state 3 of the application'>
 </details>
 
 ## Appearance follow behavior
