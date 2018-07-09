@@ -87,6 +87,32 @@ The fourth state: the function of the fourth state is to see which coin you've a
 </details>
 
 #### Progressive disclosure
+I want to achieve progressive disclosure to split adding the coin and adding the amount in two parts. 
+
+Also to give the user a sense how many steps they have to take to complete the task a navigation is added on the right side. The user is also to navigate between the steps by clicking on the navigation.
+
+
+<details>
+<summary>Click to see: progressive disclosure in action</summary>
+<span>Progressive disclosure</span>
+<img src="readme-assets/progressive-disclosure.gif" alt="Progressive disclosure">
+</details>
+
+When a step as been completed that part of the navigation will light up green. The color grey indicate that the user is on that part of the step and has yet to complete the task.
+
+<details>
+<summary>Click to see: images of the navigation</summary>
+<span>The user is in step 1 and has yet to complete the task</span>
+<br>
+<img src="readme-assets/navigation-state-1.PNG" alt="Step1">
+
+<span>Step 1 is completed. The user is now in step 2</span>
+<br>
+<img src="readme-assets/navigation-state-2.PNG" alt="Step2">
+</details>
+
+
+
 
 #### Zero state
 
