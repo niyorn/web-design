@@ -82,9 +82,8 @@ The fourth state: the function of the fourth state is to see which coin you've a
 <span>State three</span>
 <img src="readme-assets/state-3.PNG" alt="state three: see total value">
 
-
 <span>State four</span>
-<img src="readme-assets/state-3.PNG" alt="state four: all of your co">
+<img src="readme-assets/state-4.PNG" alt="state four: all of your co">
 </details>
 
 #### Progressive disclosure
