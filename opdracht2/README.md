@@ -110,10 +110,16 @@ When a step as been completed that part of the navigation will light up green. T
 <img src="readme-assets/navigation-state-2.PNG" alt="Step2">
 </details>
 
-
-
-
 #### Zero state
+
+When an user comes to our application to the first time, we want to help them out immediately. We've added a zero state to the application so that the user can immediately add coins to their wallet, also this zero state helps the user understand what we expects of them.
+
+<details>
+<summary>Click to see: the zero state</summary>
+<span>Zero state</span>
+<br>
+<img src="readme-assets/zero-state.PNG" alt="zero-state">
+</details>
 
 #### Strong visual hierarchies works best
 
