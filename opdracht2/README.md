@@ -130,7 +130,7 @@ When the the user is on this part of the application, I want their focus to be o
 <summary>Click to see: hierarchies in action</summary>
 <span>The total value is made really big</span>
 <br>
-<img src="readme-assets/hierarchies.PNG" alt="main page with big font">
+<img src="readme-assets/hierarchie.PNG" alt="main page with big font">
 </details>
 
 ## Sorting & Filtering
