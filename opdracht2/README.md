@@ -137,6 +137,8 @@ When the the user is on this part of the application, I want their focus to be o
 
 Marijn is unable to use the trackpad so he need to be able to navigate through the site without the trackpad. To achieve this, every part of the application is tab-able. You are able to navigate through the application by using the tab-key on the keyboard.
 
+Because tab is going to be used a lot, a custom focus state is added to application. This is done because the default focus state is not obvious enough. The custom focus state will create a more unique experience by adding our own flair to it, also because it's more obvious which item the user is focussed on, this will additionally create a better user experience. 
+
 <details>
 <summary>Click to see: tab in action</summary>
 <span>Adding coin to the wallet by tabbing</span>
