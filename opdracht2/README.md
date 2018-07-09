@@ -17,10 +17,10 @@ On top of that, we want to enhance the keyboard experience. Instead of using the
         - [Progressive disclosure](#progressive-disclosure)
         - [Zero state](#zero-state)
         - [Strong visual hierarchies works best](#strong-visual-hierarchies-works-best)
-- Sorting & Filtering
-- Version one
-- The test
-- Changes
+- [Accessibility](#accessibility)
+- [Sorting & Filtering](#sorting--filtering)
+- [The test](#the-test)
+- [Changes](#changes)
 
 ## Description
 
@@ -147,6 +147,12 @@ Marijn is unable to use the trackpad so he need to be able to navigate through t
 
 ## Sorting & Filtering
 
+When the user have added coins to their wallet. They need a way to sort and filter this. This will give them valuable information like for example: which of their coins is worth the most.
+
+*disclaimer: this functionality doesn't work at the moment. It is just an idea of the things the user is able to sort and filter*
+
+![sorting](readme-assets/sorting.PNG)
+
 ### Sorting
 - Alphabetical
 - Last added coin
@@ -155,15 +161,11 @@ Marijn is unable to use the trackpad so he need to be able to navigate through t
 - Market Cap
 - Total possession per individual asset
 
-
 ### Filtering
-- Search
+- Name
 - Favorite
-- Possession of assets
 
-
-
-## Insight
+## The test
 *The site has been tested by Marijn. This is the insight that is gained after testing*
 
 - Zero state should've given the user more options to start with. This way the user know what to do.
