@@ -1,18 +1,43 @@
 # crypto-wallet
+
 Proof of concept for a Crypto wallet. With this wallet you're able to add your crypto coin to the wallet and see how your investment is  worth in the current market. 
 
-To enhance your exprience on this application, we're adding an a way for you to see in a glance how your investment is doing. Your investment font-size will grow or shrink based on the 24 hour changes of the market. Example: If your total coin value increase by 10% than the font-size of your investment will grow by 10% from the base font. So if you're on the the homepage and you see that your investment is displayed really big, than with a glance your just know that your investment is doing good in the current market. - inspired by Sam Gulliker
+To enhance your experience on this application, we're adding an a way for you to see in a glance how your investment is doing. Your investment font-size will grow or shrink based on the 24 hour changes of the market. Example: If your total coin value increase by 10% than the font-size of your investment will grow by 10% from the base font. So if you're on the the homepage and you see that your investment is displayed really big, than with a glance your just know that your investment is doing good in the current market. - inspired by Sam Gulliker
 
-On top of that, we want to enhance the keyboard experience. Instead of using the standard focus state from the browser, we want to add our own custom focus state that will give the user a clearer feedback where they're focussing on. Also we want to add a transition effect from the current item that you're focussing on to the new item that you've foccused. - inspired by Varsiles
+On top of that, we want to enhance the keyboard experience. Instead of using the standard focus state from the browser, we want to add our own custom focus state that will give the user a clearer feedback where they're focussing on. Also we want to add a transition effect from the current item that you're focussing on to the new item that you've focussed. - inspired by Varsiles
 
+## Table of content
+
+    - Description
+    - [User scenario](#user-scenario)
+    - Focus
+    - Sorting & Filtering
+    - Version one
+    - The test
+    - Changes
+
+## Description
+
+This application is done for the course 'Web Design' commissioned by the minor Web Development by de Hogeschool van Amsterdam.  In this course we learn to design our application according to the [Design Principle](http://bokardo.com/principles-of-user-interface-design/) by Joshua Porter. And how to test our application.
+
+In this document you'll find an user scenario for the application. My chosen principle that I've decided to focus on and how I've applied it on the application. You'll also find two version of the application, on before the test and one after the test. The second one is the final version where we've improve our application after getting the insight/feedback. 
 
 ## User Scenarios
- *User scenarios help designers understand what motivates users when they interact with a design*
+
+*User scenarios help designers understand what motivates users when they interact with a design*
+
+In this user scenario You'll find two person. Both person are interested in investing in the crypto market. One person (Servin) is a student and the other person (Marijn) is an adult that have a disability. 
 
 ### Servin
-Servin have invested in the cryptomarket. Servin wants an easy way to able to see the total worth of all of his assets and also the worth of the individuel assets.
+
+Servin have invested in the crypto market. Servin wants an easy way to able to see the total worth of all of his assets and also the worth of the individual assets.
+
 ### Marijn
-Marijn have invested in the cryptomarket, and wants to see the total worth of his assets also. But because of a chronic disease he is unable to use the trackpad.
+
+Marijn have invested in the crypto market, and wants to see the total worth of his assets also. But because of a chronic disease he is unable to use the trackpad.
+
+
+
 ## Sorting & Filtering
 
 ### Sorting
