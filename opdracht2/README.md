@@ -87,10 +87,9 @@ The fourth state: the function of the fourth state is to see which coin you've a
 </details>
 
 #### Progressive disclosure
-I want to achieve progressive disclosure to split adding the coin and adding the amount in two parts. 
+I want to achieve progressive disclosure by splitting adding the coin and adding the amount in two parts. 
 
-Also to give the user a sense how many steps they have to take to complete the task a navigation is added on the right side. The user is also to navigate between the steps by clicking on the navigation.
-
+Also to give the user a sense how many steps they have to take to complete the task, a navigation is added on the right side. The user is also to navigate between the steps by clicking on the navigation.
 
 <details>
 <summary>Click to see: progressive disclosure in action</summary>
