@@ -65,33 +65,27 @@ This application got four states. In every states the focus of the user should b
 
 The first state: the function of this state is to choose which coin you want to add to your wallet.
 
-<details>
-<summary>Click to see: screenshot of the first state</summary>
-<img src="readme-assets/state-1.PNG" alt="state one: adding coin to wallet">
-</details>
-
 The second state: the function of the second state is to add the amount that you have.
 
-<details>
-<summary>Click to see: screenshot of the second state</summary>
-<img src="readme-assets/state-2.PNG" alt="state two: add amount">
-</details>
-
 The third state: The function of the third state is to see your total value.
-
-<details>
-<summary>Click to see: screenshot of the third state</summary>
-<img src="readme-assets/state-3.PNG" alt="state three: see total value">
-</details>
-
 
 The fourth state: the function of the fourth state is to see which coin you've added to your wallet.
 
 <details>
-<summary>Click to see: screenshot of the fourth state</summary>
-<img src="readme-assets/state-3.PNG" alt="state four: all of your coins">
-</details>
+<summary>Click to see: screenshot of the states</summary>
+<span>State one</span>
+<img src="readme-assets/state-1.PNG" alt="state one: adding coin to wallet">
 
+<span>State two</span>
+<img src="readme-assets/state-2.PNG" alt="state two: add amount">
+
+<span>State three</span>
+<img src="readme-assets/state-3.PNG" alt="state three: see total value">
+
+
+<span>State four</span>
+<img src="readme-assets/state-3.PNG" alt="state four: all of your co">
+</details>
 
 #### Progressive disclosure
 
