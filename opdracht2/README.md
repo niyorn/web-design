@@ -10,7 +10,13 @@ On top of that, we want to enhance the keyboard experience. Instead of using the
 - [User scenario](#user-scenario)
     - [Servin](#servin)
     - [Marijn](#marijn)
-- Focus
+- [Focus](#focus)
+- [Application version one](#application-version-one)
+    - [Focus](#focus-2)
+        - [One primary action per screen](#one-primary-action-per-screen)
+        - [Progressive disclosure](#progressive-disclosure)
+        - [Zero state](#zero-state)
+        - [Strong visual hierarchies works best](#strong-visual-hierarchies-works-best)
 - Sorting & Filtering
 - Version one
 - The test
@@ -22,7 +28,7 @@ This application is done for the course 'Web Design' commissioned by the minor W
 
 In this document you'll find an user scenario for the application. My chosen principle that I've decided to focus on and how I've applied it on the application. You'll also find two version of the application, on before the test and one after the test. The second one is the final version where we've improve our application after getting the insight/feedback. 
 
-## User Scenarios
+## User Scenario
 
 *User scenarios help designers understand what motivates users when they interact with a design*
 
@@ -36,6 +42,63 @@ Servin have invested in the crypto market. Servin wants an easy way to able to s
 
 Marijn have invested in the crypto market, and wants to see the total worth of his assets also. But because of a chronic disease he is unable to use the trackpad.
 
+## Focus
+
+For this project I want focus on the following design principles
+
+- One primary action per screen
+- Progressive disclosure
+- The zero state
+- Strong visual hierarchies works best
+
+## Application version one
+![Cryptowallet the first version](readme-assets/crypto-wallet-version-1.gif)
+
+This is the first version of the application
+
+### Focus
+In this section I'll explain how I've applied the design principles to the application.
+
+#### One primary action per screen
+
+This application got four states. In every states the focus of the user should be on the main function of that state.
+
+The first state: the function of this state is to choose which coin you want to add to your wallet.
+
+<details>
+<summary>Click to see: screenshot of the first state</summary>
+<img src="readme-assets/state-1.PNG" alt="state one: adding coin to wallet">
+</details>
+
+The second state: the function of the second state is to add the amount that you have.
+
+<details>
+<summary>Click to see: screenshot of the second state</summary>
+<img src="readme-assets/state-2.PNG" alt="state two: add amount">
+</details>
+
+The third state: The function of the third state is to see your total value.
+
+<details>
+<summary>Click to see: screenshot of the third state</summary>
+<img src="readme-assets/state-3.PNG" alt="state three: see total value">
+</details>
+
+
+The fourth state: the function of the fourth state is to see which coin you've added to your wallet.
+
+<details>
+<summary>Click to see: screenshot of the fourth state</summary>
+<img src="readme-assets/state-3.PNG" alt="state four: all of your coins">
+</details>
+
+
+#### Progressive disclosure
+
+#### Zero state
+
+#### Strong visual hierarchies works best
+
 
 
 ## Sorting & Filtering
@@ -46,7 +109,7 @@ Marijn have invested in the crypto market, and wants to see the total worth of h
 - 24 Hour change
 - Worth of asset
 - Market Cap
-- Total possession per individuel asset
+- Total possession per individual asset
 
 
 ### Filtering
@@ -54,14 +117,7 @@ Marijn have invested in the crypto market, and wants to see the total worth of h
 - Favorite
 - Possession of assets
 
-## Focus
-*For this project I want focus on the following design priciples*
 
-
-- One primary action per screen
-- Progressive disclosure
-- The zero state
-- Strong visual hierarchies works best
 
 ## Insight
 *The site has been tested by Marijn. This is the insight that is gained after testing*
