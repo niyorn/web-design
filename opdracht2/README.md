@@ -133,6 +133,18 @@ When the the user is on this part of the application, I want their focus to be o
 <img src="readme-assets/hierarchie.PNG" alt="main page with big font">
 </details>
 
+## Accessibility
+
+Marijn is unable to use the trackpad so he need to be able to navigate through the site without the trackpad. To achieve this, every part of the application is tab-able. You are able to navigate through the application by using the tab-key on the keyboard.
+
+<details>
+<summary>Click to see: tab in action</summary>
+<span>Adding coin to the wallet by tabbing</span>
+<br>
+<img src="readme-assets/tabbing.gif" alt="a gif when the user tab through the application">
+</details>
+
+
 ## Sorting & Filtering
 
 ### Sorting
