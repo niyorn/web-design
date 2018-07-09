@@ -20,6 +20,7 @@ On top of that, we want to enhance the keyboard experience. Instead of using the
 - [Accessibility](#accessibility)
 - [Sorting & Filtering](#sorting--filtering)
 - [The test](#the-test)
+    - [Insight](#insight)
 - [Changes](#changes)
 
 ## Description
@@ -168,7 +169,14 @@ When the user have added coins to their wallet. They need a way to sort and filt
 - Favorite
 
 ## The test
-*The site has been tested by Marijn. This is the insight that is gained after testing*
+
+The application have been tested by Marijn. The video of the test can be found [here](https://vimeo.com/279084453) (video is in dutch). 
+
+The user scenario that Marijn have to go through is that he's an investor in the crypto market and that he wants to add coins to his crypto wallet to keep track of it all.
+
+The section below is the insight that is gained after the test.
+
+### insight
 
 - Zero state should've given the user more options to start with. This way the user know what to do.
 - Progressive disclosure can be taken to far. If the task is not complex and if they're the same thing than it's better to have them on the same page.
