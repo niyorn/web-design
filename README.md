@@ -4,5 +4,5 @@ This course is about designing an application that is enjoyable able to use. Whe
 
 Assignment 1: is about creating a simple portfolio site with the focus on the a couple design principle of Joshua Porter. [Read more](https://github.com/niyorn/web-design/tree/master/opdracht1)
 
-Assignment 2: Create a simple crypto wallet that is enjoyble for normal and disabled user. [Read more](https://github.com/niyorn/web-design/tree/master/opdracht2)
+Assignment 2: Create a simple crypto wallet that is enjoyable for normal and disabled user. [Read more](https://github.com/niyorn/web-design/tree/master/opdracht2)
 
