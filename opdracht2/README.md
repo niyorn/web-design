@@ -123,7 +123,15 @@ When an user comes to our application to the first time, we want to help them ou
 
 #### Strong visual hierarchies works best
 
+When the user have completed all the task, they will arrive at the 'main' screen where they will see their total value of their wallet. 
+When the the user is on this part of the application, I want their focus to be on the total value. To make this happen I've made the text of the total value really big, so that when they've arrive their focus will be attracted to the big text.
 
+<details>
+<summary>Click to see: hierarchies in action</summary>
+<span>The total value is made really big</span>
+<br>
+<img src="readme-assets/hierarchies.PNG" alt="main page with big font">
+</details>
 
 ## Sorting & Filtering
 
