@@ -24,6 +24,7 @@ We want to enhance the keyboard experience. Instead of using the standard focus 
 - [The test](#the-test)
     - [Insight](#insight)
 - [Changes](#changes)
+ -[Progressive disclosure](#progessive-disclosure-1)
 
 ## Description
 
@@ -189,3 +190,41 @@ The section below is the insight that is gained after the test.
 This section gives insight about the improvement that is done to the application after testing. The changes are based on the suggestion that is given by the tested person and from observation.
 
 ### Progressive disclosure
+In version 1 we used to have two pages, one for selecting coins and the other for adding the amount. This however was unnecessary because the process of selecting and adding is not complicated and having to use two different page made the flow of the application not fluid.
+
+So in Version 2, We've put selection and adding into the same page. 
+
+<details>
+<summary>Click to see: the before and after</summary>
+<span>Before</span>
+<br>
+<img src="readme-assets/state-1.PNG" alt="state1">
+<img src="readme-assets/state-2.PNG" alt="state2">
+<br>
+
+<span>After</span>
+<br>
+<img src="readme-assets/v2-state-1.PNG" alt="state1">
+<br>
+</details>
+
+### Bigger button
+When Marijn testing the application and came on the page where he have to insert the amount of coins he had, something unexpected happened. The assumption that we've had was that the user will insert the amount by using the number key or the arrow key, but the instead Marijn was using the little arrow that is displayed next to the input field. 
+
+This however is a problem, because the little arrow next to the input field is really small and is not useable for people that cannot do precise movement with the mouse.
+
+In version 2, we've created a dedicated button for adding the amount. The button are also created to be big enough that precise movement is not necessary. 
+
+<details>
+<summary>Click to see: the before and after</summary>
+<span>Before</span>
+<br>
+<img src="readme-assets/v1-amount.gif" alt="v1 adding amount">
+<br>
+
+<span>After</span>
+<br>
+<img src="readme-assets/v2-amount.gif" alt="v2 adding amount">
+<br>
+</details>
+
