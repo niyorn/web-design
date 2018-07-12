@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add to wallet</title>
+    <link rel="stylesheet" href="public/stylesheet.css">
+</head>
+
+<body class="add-to-wallet">
+
+    <main class="container">
+
+        <section class="proceed-container">
+            <h1>Selected Coins</h1>
+            <p>This are all of the currencies that you've selected. Are sure you want to add those currencies to your wallet?</p>
+
+            <div>
+                <a href="wallet">Yes! I'm sure</a>
+                <a href="javascript: history.go(-1)">No, I'm not sure</a>
+            </div>
+        </section>
+
+        <section class="coins-container">
+            <section id="bitcoin" class="coin-container">
+                <span class="coin-name">Bitcoin</span>
+                <img class="coin-image" src="https://s2.coinmarketcap.com/static/img/coins/128x128/1.png" alt="">
+                <div class="amount-container">
+                    <label for="amount">Amount</label>
+                    <input id="amount" type="number" placeholder="0" min="0" value="0">
+
+                    <button class="amount-button minus">-</button>
+                    <button class="amount-button plus">+</button>
+                </div>
+            </section>
+
+            <section class="coin-container">
+                <span class="coin-name">Ethereum</span>
+                <img class="coin-image" src="https://s2.coinmarketcap.com/static/img/coins/128x128/1027.png" alt="">
+                <div class="amount-container">
+                    <label for="amount">Amount</label>
+                    <input id="amount" type="number" placeholder="0" min="0" value="0">
+
+                    <button class="amount-button minus">-</button>
+                    <button class="amount-button plus">+</button>
+                </div>
+            </section>
+
+
+            <section class="coin-container">
+                <span class="coin-name">Cardano</span>
+                <img class="coin-image" src="https://s2.coinmarketcap.com/static/img/coins/128x128/2010.png" alt="">
+                <div class="amount-container">
+                    <label for="amount">Amount</label>
+                    <input id="amount" type="number" placeholder="0" min="0" value="0">
+
+                    <button class="amount-button minus">-</button>
+                    <button class="amount-button plus">+</button>
+                </div>
+            </section>
+
+            <section class="coin-container">
+                <span class="coin-name">Request</span>
+                <img class="coin-image" src="https://s2.coinmarketcap.com/static/img/coins/128x128/2071.png" alt="">
+                <div class="amount-container">
+                    <label for="amount">Amount</label>
+                    <input id="amount" type="number" placeholder="0" min="0" value="0">
+
+                    <button class="amount-button minus">-</button>
+                    <button class="amount-button plus">+</button>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <script src="public/script.js"></script>
+
+</body>
+
+</html>

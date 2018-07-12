@@ -2,13 +2,13 @@
     --background-color: #080e29;
     --primary-color: #1a2248;
 
-    --material-shaduw-1: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    --material-shaduw-2: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    --material-shaduw-3: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    --material-shaduw-4: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    --material-shaduw-5: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    --material-shadow-1: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    --material-shadow-2: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    --material-shadow-3: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    --material-shadow-4: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    --material-shadow-5: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 
-    --transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    --transition: all 0.5s cubic-bezier(.25,.8,.25,1);
 }
 
 *{
@@ -29,3 +29,395 @@ html, body{
     scroll-behavior: smooth;
 }
 
+.container {
+    display: flex;
+    display: grid;
+}
+
+.index .container{
+    grid-template-areas: 'intro'
+                         'nav'
+                         'coins';
+}
+
+.intro{
+    display: grid;
+    grid-area: intro;
+    height: calc(100vh - 4rem);
+    grid-template-areas: 'coin text';
+    grid-template-columns: 1.5fr 1fr;
+}
+
+.intro .intro-coin{
+    grid-area: coin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.intro .intro-coin::after{
+    content: '';
+    background-color: rgb(241, 221, 128);
+    height: 37vw;
+    width: 37vw;
+    position: absolute;
+    border-radius: 50%;
+    animation: pop-in 1s forwards;
+}
+
+.intro .intro-coin .coin-container{
+    position: relative;
+    max-width: 34rem;
+    z-index: 1;
+    box-shadow: var(--material-shadow-4);
+}
+
+@keyframes pop-in {
+    from {
+        transform: scale(1.7);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.intro .intro-coin .coin-container .coin-image {
+    height: 32rem;
+    padding: 0;
+}
+
+.intro .intro-coin .coin-container .amount-container .plus::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: yellow;
+    animation: plus-bounce 1s infinite;
+}
+
+@keyframes plus-bounce {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    to {
+        transform: scale(2);
+        opacity: 0
+    }
+}
+
+
+.intro .intro-coin .coin-container input {
+    font-size: 4.7em;
+}
+
+.intro .intro-coin .coin-container .amount-button {
+    width: 5rem;
+    height: 5rem;
+}
+
+.intro .intro-text{
+    grid-area: text;
+    padding: 4rem;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro .intro-text h1{
+    font-size: 6em;
+}
+
+.intro .intro-text p{
+    font-size: 1.7em;
+    margin-top: 2rem;
+}
+
+.navigation{
+    background-color: black;
+    grid-area: nav;
+    height: 4rem;
+    position: fixed;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: var(--material-shadow-2);
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.navigation ul li {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation ul li:focus-within, .navigation ul li:hover{
+    background-color: yellow;
+    cursor: pointer;
+}
+
+.navigation ul li:first-of-type{
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+.navigation ul li:last-of-type{
+    background-color: rgb(184, 184, 184);
+    padding: 0;
+    font-weight: bold;
+}
+
+.navigation ul li:last-of-type a {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    pointer-events: none;
+    position: relative;
+}
+
+.navigation ul li:last-of-type a.active{
+    background-color: yellow;
+    color: black;
+    pointer-events: initial;
+}
+
+.navigation ul li:last-of-type a span {
+    position: absolute;
+    bottom: -3rem;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    background-color: yellow;
+    color: black;
+    width: 100%;
+    padding: 1rem;
+    display: none;
+}
+
+.navigation ul li:last-of-type a.active span {
+    display: flex;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.navigation ul li button {
+    border: none;
+    background-color: transparent;
+    color: white;
+    display: flex;
+    height: 100%;
+    padding: 1rem;
+}
+
+
+.navigation ul li button:hover, .navigation ul li button:focus,
+.navigation ul li a:hover, .navigation ul li a:focus{
+    color: black;
+    background-color: yellow;
+    cursor: pointer;
+}
+
+
+/*
+The crypto coins
+
+*/
+
+.coins-container{
+    grid-area: coins;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 2rem;
+    grid-column-gap: 7rem;
+    padding: 7rem;
+}
+
+
+.coin-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #292929;
+    position: relative;
+    border-radius: 0.4rem;
+    box-shadow: var(--material-shadow-2);
+}
+
+.coin-container .coin-image{
+    width: 100%;
+    object-fit: contain;
+    padding: 4rem;
+    padding-top: 6rem;
+    height: 20rem;
+}
+
+.coin-container .coin-name{
+    font-size: 2em;
+    color: white;
+    position: absolute;
+    top: 1rem;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.coin-container .amount-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    position: relative;
+    padding: 1rem;
+}
+
+.coin-container .amount-container label{
+    display: flex;
+    justify-content: center;
+    font-size: 1em;
+    color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+}
+
+.coin-container .amount-container input {
+    display: flex;
+    width: 70%;
+    border: none;
+    font-size: 2.7em;
+    text-align: center;
+}
+
+.coin-container .amount-container .amount-button {
+    /* background-color: green; */
+    border: none;
+    position: absolute;
+    font-size: 3rem;
+    width: 4rem;
+    height: 4rem;
+    box-shadow: var(--material-shadow-1);
+    transition: var(--transition);
+}
+
+.coin-container .amount-container .amount-button:hover,
+.coin-container .amount-container .amount-button:focus {
+    box-shadow: var(--material-shadow-4);
+    background-color: yellow;
+    color: black;
+    cursor: pointer;
+}
+
+.amount-button.minus{
+    left: -2rem;
+}
+
+.amount-button.plus{
+    right: -2rem;
+    position: relative;
+}
+
+/*
+proceed page
+*/
+
+
+.add-to-wallet .container{
+    grid-template-areas: 'coins text';
+    grid-template-columns: 1.4fr 1fr;
+}
+
+.add-to-wallet .coins-container {
+    justify-content: center;
+}
+
+.add-to-wallet .coin-container .proceed-container {
+    grid-area: text;
+}
+
+.add-to-wallet .coin-container .container {
+    grid-area: coins;
+}
+
+.proceed-container {
+    padding: 4rem;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+
+.proceed-container::after {
+    position: absolute;
+    content: '';
+    height: 27vw;
+    width: 27vw;
+    background-color: rgb(241, 221, 128);
+    z-index: -1;
+    border-radius: 50%;
+    animation: pop-in 1s forwards;
+}
+
+.proceed-container h1 {
+    font-size: 7em;
+}
+
+.proceed-container p {
+    font-size: 1.7em;
+    margin-top: 2rem;
+}
+
+.proceed-container div {
+    margin-top: 2rem;
+}
+
+.proceed-container a {
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    background-color: black;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    border-radius: 0.2rem;
+    transition: var(--transition);
+}
+
+.proceed-container a:hover,
+.proceed-container a:first-of-type:hover, .proceed-container a:last-of-type:hover,
+.proceed-container a:focus,
+.proceed-container a:first-of-type:focus, .proceed-container a:last-of-type:focus{
+    background-color: yellow;
+    color: black;
+    box-shadow: var(--material-shadow-4);
+}
+
+.proceed-container a:first-of-type {
+    color: white;
+}
+
+.proceed-container a:last-of-type{
+    background-color: transparent;
+}

@@ -1,10 +1,12 @@
 # crypto-wallet
 
+![Crypto Wallet application](readme-assets/application-v2.gif)
+
+
 Proof of concept for a Crypto wallet. With this wallet you're able to add your crypto coin to the wallet and see how your investment is  worth in the current market. 
 
-To enhance your experience on this application, we're adding an a way for you to see in a glance how your investment is doing. Your investment font-size will grow or shrink based on the 24 hour changes of the market. Example: If your total coin value increase by 10% than the font-size of your investment will grow by 10% from the base font. So if you're on the the homepage and you see that your investment is displayed really big, than with a glance your just know that your investment is doing good in the current market. - inspired by Sam Gulliker
+We want to enhance the keyboard experience. Instead of using the standard focus state from the browser, we want to add our own custom focus state that will give the user a clearer feedback where they're focussing on. 
 
-On top of that, we want to enhance the keyboard experience. Instead of using the standard focus state from the browser, we want to add our own custom focus state that will give the user a clearer feedback where they're focussing on. Also we want to add a transition effect from the current item that you're focussing on to the new item that you've focussed. - inspired by Varsiles
 ## Table of content
 - [Description](#description)
 - [User scenario](#user-scenario)
@@ -172,11 +174,18 @@ When the user have added coins to their wallet. They need a way to sort and filt
 
 The application have been tested by Marijn. The video of the test can be found [here](https://vimeo.com/279084453) (video is in dutch). 
 
-The user scenario that Marijn have to go through is that he's an investor in the crypto market and that he wants to add coins to his crypto wallet to keep track of it all.
+The user scenario that Marijn have to go through is that he's an investor in the crypto market and that he wants to add coins to his Crypto Wallet to keep track of it all.
 
 The section below is the insight that is gained after the test.
 
 ### insight
 
+- The assumption that we've had was that Marijn cannot use the trackpad. While testing it became clear that was not truth at all. He can use a trackpad just fine, but with a little bit more difficulty that a normal person.
 - Zero state should've given the user more options to start with. This way the user know what to do.
 - Progressive disclosure can be taken to far. If the task is not complex and if they're the same thing than it's better to have them on the same page.
+
+## Changes
+
+This section gives insight about the improvement that is done to the application after testing. The changes are based on the suggestion that is given by the tested person and from observation.
+
+### Progressive disclosure

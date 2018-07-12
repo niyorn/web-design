@@ -1,12 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="public/stylesheet.css">
 </head>
-<body class="index">
-    
+
+<body id="home" class="index">
+    <main class="container">
+        <section class="intro">
+            <div class="intro-coin">
+                <section class="coin-container">
+                    <span class="coin-name">Ethereum</span>
+                    <img class="coin-image" src="https://www.ethereum.org/images/logos/ETHEREUM-ICON_Black_small.png" alt="">
+                    <div class="amount-container">
+                        <label for="amount">Amount</label>
+                        <input id="amount" type="number" placeholder="0" min="0">
+
+                        <button class="amount-button minus">-</button>
+                        <button class="amount-button plus">+</button>
+                    </div>
+                </section>
+            </div>
+
+            <div class="intro-text">
+                <h1>Crypto Wallet</h1>
+                <p>Crypto wallet is a sophisticated digital wallet for all your cryptocurrencies.</p>
+
+                <p>Add your first cryptocurrency by clicking on the
+                    <b>+</b> on the left image</p>
+            </div>
+        </section>
+
+        <nav class="navigation">
+            <ul>
+                <li>
+                    <a href="#home">Cryptowallet</a>
+                </li>
+                <li>
+                    <button>Change %</button>
+                </li>
+                <li>
+                    <button>Aphabetical</button>
+                </li>
+                <li>
+                    <button>Date</button>
+                </li>
+                <li>
+                    <a id="total-added" href="cart.html"><p>Added</p> <span id="added-amount"></span></a>
+                </li>
+            </ul>
+            </section>
+        </nav>
+
+        <section id="coins-container" class="coins-container">
+            <section id="bitcoin" class="coin-container">
+                <span class="coin-name">Bitcoin</span>
+                <img class="coin-image" src="https://s2.coinmarketcap.com/static/img/coins/128x128/1.png" alt="">
+                <div class="amount-container">
+                    <label for="amount">Amount</label>
+                    <input id="amount" type="number" placeholder="0" min="0" value="0">
+
+                    <button class="amount-button minus">-</button>
+                    <button class="amount-button plus">+</button>
+                </div>
+            </section>
+
+            <section class="coin-container">
+                <span class="coin-name">Ethereum</span>
+                <img class="coin-image" src="https://s2.coinmarketcap.com/static/img/coins/128x128/1027.png" alt="">
+                <div class="amount-container">
+                    <label for="amount">Amount</label>
+                    <input id="amount" type="number" placeholder="0" min="0" value="0">
+
+                    <button class="amount-button minus">-</button>
+                    <button class="amount-button plus">+</button>
+                </div>
+            </section>
+
+            <section class="coin-container">
+                <span class="coin-name">Ripple</span>
+                <img class="coin-image" src="https://s2.coinmarketcap.com/static/img/coins/128x128/52.png" alt="">
+                <div class="amount-container">
+                    <label for="amount">Amount</label>
+                    <input id="amount" type="number" placeholder="0" min="0" value="0">
+
+                    <button class="amount-button minus">-</button>
+                    <button class="amount-button plus">+</button>
+                </div>
+            </section>
+
+            <section class="coin-container">
+                <span class="coin-name">EOS</span>
+                <img class="coin-image" src="https://s2.coinmarketcap.com/static/img/coins/128x128/1765.png" alt="">
+                <div class="amount-container">
+                    <label for="amount">Amount</label>
+                    <input id="amount" type="number" placeholder="0" min="0" value="0">
+
+                    <button class="amount-button minus">-</button>
+                    <button class="amount-button plus">+</button>
+                </div>
+            </section>
+
+
+            <section class="coin-container">
+                <span class="coin-name">Stellar</span>
+                <img class="coin-image" src="https://s2.coinmarketcap.com/static/img/coins/128x128/512.png" alt="">
+                <div class="amount-container">
+                    <label for="amount">Amount</label>
+                    <input id="amount" type="number" placeholder="0" min="0" value="0">
+
+                    <button class="amount-button minus">-</button>
+                    <button class="amount-button plus">+</button>
+                </div>
+            </section>
+
+            <section class="coin-container">
+                <span class="coin-name">Cardano</span>
+                <img class="coin-image" src="https://s2.coinmarketcap.com/static/img/coins/128x128/2010.png" alt="">
+                <div class="amount-container">
+                    <label for="amount">Amount</label>
+                    <input id="amount" type="number" placeholder="0" min="0" value="0">
+
+                    <button class="amount-button minus">-</button>
+                    <button class="amount-button plus">+</button>
+                </div>
+            </section>
+
+            <section class="coin-container">
+                <span class="coin-name">Neo</span>
+                <img class="coin-image" src="https://s2.coinmarketcap.com/static/img/coins/128x128/1376.png" alt="">
+                <div class="amount-container">
+                    <label for="amount">Amount</label>
+                    <input id="amount" type="number" placeholder="0" value="0" min="0" value="0">
+
+                    <button class="amount-button minus">-</button>
+                    <button class="amount-button plus">+</button>
+                </div>
+            </section>
+
+            <section class="coin-container">
+                <span class="coin-name">Tezos</span>
+                <img class="coin-image" src="https://s2.coinmarketcap.com/static/img/coins/128x128/2011.png" alt="">
+                <div class="amount-container">
+                    <label for="amount">Amount</label>
+                    <input id="amount" type="number" placeholder="0" min="0" value="0">
+
+                    <button class="amount-button minus">-</button>
+                    <button class="amount-button plus">+</button>
+                </div>
+            </section>
+
+            <section class="coin-container">
+                <span class="coin-name">Vechain</span>
+                <img class="coin-image" src="https://s2.coinmarketcap.com/static/img/coins/128x128/1904.png" alt="">
+                <div class="amount-container">
+                    <label for="amount">Amount</label>
+                    <input id="amount" type="number" placeholder="0" min="0" value="0">
+
+                    <button class="amount-button minus">-</button>
+                    <button class="amount-button plus">+</button>
+                </div>
+            </section>
+
+            <section class="coin-container">
+                <span class="coin-name">Qtum</span>
+                <img class="coin-image" src="https://s2.coinmarketcap.com/static/img/coins/128x128/1684.png" alt="">
+                <div class="amount-container">
+                    <label for="amount">Amount</label>
+                    <input id="amount" type="number" placeholder="0" min="0" value="0">
+
+                    <button class="amount-button minus">-</button>
+                    <button class="amount-button plus">+</button>
+                </div>
+            </section>
+
+            <section class="coin-container">
+                <span class="coin-name">Icon</span>
+                <img class="coin-image" src="https://s2.coinmarketcap.com/static/img/coins/128x128/2099.png" alt="">
+                <div class="amount-container">
+                    <label for="amount">Amount</label>
+                    <input id="amount" type="number" placeholder="0" min="0" value="0">
+
+                    <button class="amount-button minus">-</button>
+                    <button class="amount-button plus">+</button>
+                </div>
+            </section>
+
+            <section class="coin-container">
+                <span class="coin-name">Lisk</span>
+                <img class="coin-image" src="https://s2.coinmarketcap.com/static/img/coins/128x128/1214.png" alt="">
+                <div class="amount-container">
+                    <label for="amount">Amount</label>
+                    <input id="amount" type="number" placeholder="0" min="0" value="0">
+
+                    <button class="amount-button minus">-</button>
+                    <button class="amount-button plus">+</button>
+                </div>
+            </section>
+
+            <section class="coin-container">
+                <span class="coin-name">Nano</span>
+                <img class="coin-image" src="https://s2.coinmarketcap.com/static/img/coins/128x128/1567.png" alt="">
+                <div class="amount-container">
+                    <label for="amount">Amount</label>
+                    <input id="amount" type="number" placeholder="0" min="0" value="0">
+
+                    <button class="amount-button minus">-</button>
+                    <button class="amount-button plus">+</button>
+                </div>
+            </section>
+
+            <section class="coin-container">
+                <span class="coin-name">Request</span>
+                <img class="coin-image" src="https://s2.coinmarketcap.com/static/img/coins/128x128/2071.png" alt="">
+                <div class="amount-container">
+                    <label for="amount">Amount</label>
+                    <input id="amount" type="number" placeholder="0" min="0" value="0">
+
+                    <button class="amount-button minus">-</button>
+                    <button class="amount-button plus">+</button>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <script src="public/script.js"></script>
 </body>
+
 </html>
